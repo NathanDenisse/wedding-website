@@ -84,23 +84,64 @@ body {
     font-size: 14px;
 }
 
-/* Language visibility */
-.lang-fr,
+/* Language visibility - hide English by default */
 .lang-en {
-    display: none;
+    display: none !important;
 }
 
-body.lang-fr .lang-fr {
-    display: block;
+/* Show French content by default - force display for all element types */
+body .lang-fr,
+body.lang-fr .lang-fr,
+.lang-fr {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* Navigation links - inline */
+body .lang-fr.nav-link,
+body.lang-fr .nav-link.lang-fr,
+.lang-fr.nav-link {
+    display: inline !important;
+}
+
+/* List items */
+body .lang-fr li,
+body.lang-fr .lang-fr li,
+.lang-fr li {
+    display: list-item !important;
+}
+
+/* Spans and inline elements */
+body .lang-fr span,
+body.lang-fr .lang-fr span,
+.lang-fr span {
+    display: inline !important;
+}
+
+/* When body has lang-en class, hide French and show English */
+body.lang-en .lang-fr {
+    display: none !important;
+    visibility: hidden !important;
 }
 
 body.lang-en .lang-en {
-    display: block;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
 }
 
-body.lang-fr .nav-link.lang-fr,
+body.lang-en .lang-en.nav-link,
 body.lang-en .nav-link.lang-en {
-    display: inline;
+    display: inline !important;
+}
+
+body.lang-en .lang-en li {
+    display: list-item !important;
+}
+
+body.lang-en .lang-en span {
+    display: inline !important;
 }
 
 /* ============================================
@@ -133,6 +174,8 @@ body.lang-en .nav-link.lang-en {
 
 .nav-menu li {
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .nav-link {
@@ -145,6 +188,7 @@ body.lang-en .nav-link.lang-en {
     letter-spacing: 1px;
     transition: color 0.3s ease;
     display: none;
+    white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -171,7 +215,9 @@ body.lang-en .nav-link.lang-en {
 
 .hero-content {
     max-width: 800px;
+    margin: 0 auto;
     animation: fadeInUp 1s ease;
+    text-align: center;
 }
 
 .hero-photo {
