@@ -1081,6 +1081,26 @@ body.lang-en .lang-fr {
     margin: 40px 0;
 }
 
+/* Desktop: afficher grille, cacher carousel */
+.dresscode-desktop {
+    display: grid;
+}
+
+.dresscode-mobile {
+    display: none;
+}
+
+/* Carousel dresscode spécifique */
+.dresscode-carousel {
+    max-width: 350px;
+    margin: 40px auto;
+}
+
+.dresscode-carousel .carousel-container {
+    padding-bottom: 133%;
+    /* Aspect ratio 3:4 */
+}
+
 .dresscode-placeholder {
     aspect-ratio: 3/4;
     background: linear-gradient(135deg, var(--terracotta-light), var(--accent));
@@ -1394,10 +1414,13 @@ body.lang-en .lang-fr {
         grid-template-columns: 1fr;
     }
 
-    .dresscode-gallery {
-        grid-template-columns: 1fr;
-        max-width: 350px;
-        margin: 40px auto;
+    /* Mobile: cacher grille, afficher carousel */
+    .dresscode-desktop {
+        display: none !important;
+    }
+
+    .dresscode-mobile {
+        display: block !important;
     }
 
     .photo-grid {
