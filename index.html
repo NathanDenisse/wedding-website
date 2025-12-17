@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wedding website for Annabelle & Nathan - July 10th & 11th in Sardinia">
-    <title>Annabelle & Nathan - Wedding in Sardinia</title>
+    <meta name="description" content="Site de mariage d'Annabelle & Nathan - 10 & 11 juillet en Sardaigne">
+    <title>Annabelle & Nathan - Mariage en Sardaigne</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&family=Dancing+Script:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <!-- Language switcher -->
+
+<body class="lang-fr">
+    <!-- Language Switcher -->
     <div class="language-switcher">
         <button class="lang-btn active" data-lang="fr">FR</button>
         <span class="lang-separator">|</span>
         <button class="lang-btn" data-lang="en">EN</button>
     </div>
 
-    <!-- Navigation bar -->
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <ul class="nav-menu">
-            <li><a href="#hero" class="nav-link lang-fr">Accueil</a><a href="#hero" class="nav-link lang-en">Home</a></li>
-            <li><a href="#story" class="nav-link lang-fr">Notre histoire</a><a href="#story" class="nav-link lang-en">Our Story</a></li>
-            <li><a href="#schedule" class="nav-link lang-fr">Programme</a><a href="#schedule" class="nav-link lang-en">Schedule</a></li>
-            <li><a href="#venue" class="nav-link lang-fr">Lieu</a><a href="#venue" class="nav-link lang-en">Venue</a></li>
-            <li><a href="#dresscode" class="nav-link lang-fr">Dress code</a><a href="#dresscode" class="nav-link lang-en">Dress Code</a></li>
-            <li><a href="#practical" class="nav-link lang-fr">Infos pratiques</a><a href="#practical" class="nav-link lang-en">Practical Info</a></li>
-            <li><a href="#gallery" class="nav-link lang-fr">Galerie</a><a href="#gallery" class="nav-link lang-en">Gallery</a></li>
-            <li><a href="#gift" class="nav-link lang-fr">Cagnotte</a><a href="#gift" class="nav-link lang-en">Gift Fund</a></li>
+        <ul class="nav-menu" id="nav-menu">
+            <li>
+                <a href="#hero" class="nav-link lang-fr">Accueil</a>
+                <a href="#hero" class="nav-link lang-en">Home</a>
+            </li>
+            <li>
+                <a href="#story" class="nav-link lang-fr">Notre histoire</a>
+                <a href="#story" class="nav-link lang-en">Our Story</a>
+            </li>
+            <li>
+                <a href="#schedule" class="nav-link lang-fr">Programme</a>
+                <a href="#schedule" class="nav-link lang-en">Schedule</a>
+            </li>
+            <li>
+                <a href="#venue" class="nav-link lang-fr">Lieu</a>
+                <a href="#venue" class="nav-link lang-en">Venue</a>
+            </li>
+            <li>
+                <a href="#dresscode" class="nav-link lang-fr">Dress code</a>
+                <a href="#dresscode" class="nav-link lang-en">Dress Code</a>
+            </li>
+            <li>
+                <a href="#practical" class="nav-link lang-fr">Infos pratiques</a>
+                <a href="#practical" class="nav-link lang-en">Practical Info</a>
+            </li>
+            <li>
+                <a href="#gallery" class="nav-link lang-fr">Galerie</a>
+                <a href="#gallery" class="nav-link lang-en">Gallery</a>
+            </li>
+            <li>
+                <a href="#gift" class="nav-link lang-fr">Cagnotte</a>
+                <a href="#gift" class="nav-link lang-en">Gift Fund</a>
+            </li>
         </ul>
     </nav>
 
-    <!-- Main content -->
     <main>
         <!-- Hero Section -->
         <section id="hero" class="hero">
             <div class="hero-content">
                 <div class="hero-photo">
-                    <img src="assets/IMG_3289.JPG" alt="Annabelle & Nathan" class="hero-couple-photo">
+                    <img src="assets/gallerie3.JPG" alt="Annabelle & Nathan" class="hero-couple-photo">
                 </div>
-                
-                <h1 class="hero-title lang-fr">Mariage Annabelle & Nathan</h1>
-                <h1 class="hero-title lang-en">Annabelle & Nathan's Wedding</h1>
-                
+                <h1 class="hero-title lang-fr">Annabelle & Nathan</h1>
+                <h1 class="hero-title lang-en">Annabelle & Nathan</h1>
                 <p class="hero-subtitle lang-fr">
-                    Nous célébrons notre mariage en Sardaigne, les 10 & 11 juillet, à l'hôtel Il Monastero.
+                    Nous célébrerons notre mariage en Sardaigne, les 10 & 11 juillet, à l'hôtel Il Monastero.
                 </p>
                 <p class="hero-subtitle lang-en">
                     We will celebrate our wedding in Sardinia on July 10th & 11th at Hotel Il Monastero.
                 </p>
-                
                 <a href="#story" class="scroll-btn">
-                    <span class="lang-fr">Découvrir</span>
-                    <span class="lang-en">Discover</span>
+                    <span class="lang-fr">Découvrir notre histoire</span>
+                    <span class="lang-en">Discover our story</span>
                     <span class="arrow">↓</span>
                 </a>
             </div>
@@ -64,21 +95,320 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Notre histoire</h2>
                 <h2 class="section-title lang-en">Our Story</h2>
-                
-                <div class="story-content">
-                    <p class="lang-fr">
-                        Annabelle et Nathan étaient d'abord les meilleurs amis du monde. Un week-end entre amis à Jullouville, en Normandie, a tout changé : ils sont tombés amoureux instantanément. Peu après, Nathan est parti un an aux États-Unis, et Annabelle l'a rejoint pour un road trip inoubliable à travers l'Amérique. Ensemble, ils ont ensuite vécu une année magique à Dublin pendant qu'Annabelle terminait ses études, avant de retrouver leurs amis dans une colocation aussi folle qu'inoubliable.
-                    </p>
-                    <p class="lang-fr">
-                        Après de nombreux voyages et une vie remplie d'aventures partagées, Nathan a demandé Annabelle en mariage à Santorin, alors que le soleil se couchait sur la mer Égée. Quelques mois plus tard, ils emménageaient dans leur premier appartement, marquant le début d'un nouveau chapitre. Aujourd'hui, après plus de cinq ans d'amour, de rires et de complicité, ils se retrouvent en Sardaigne pour se dire « oui » entourés de ceux qu'ils aiment.
-                    </p>
 
-                    <p class="lang-en">
-                        Annabelle and Nathan started out as the very best of friends. A weekend getaway with friends in Jullouville, Normandy, changed everything: they fell in love instantly. Shortly after, Nathan left for a year in the United States, and Annabelle joined him for an unforgettable road trip across America. Together, they then spent a magical year in Dublin while Annabelle was finishing her studies, before reuniting with friends in a wonderfully chaotic shared flat.
-                    </p>
-                    <p class="lang-en">
-                        After countless trips and a life filled with shared adventures, Nathan proposed to Annabelle in Santorini, as the sun was setting over the Aegean Sea. A few months later, they moved into their first apartment together, marking the beginning of a new chapter. Today, after more than five years of love, laughter, and deep connection, they are gathering in Sardinia to say "yes" surrounded by those they cherish most.
-                    </p>
+                <div class="timeline">
+                    <!-- Timeline Item 1: Janvier 2021 - Jullouville -->
+                    <div class="timeline-item" data-step="1">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <h3 class="timeline-date lang-fr">Janvier 2021</h3>
+                                <h3 class="timeline-date lang-en">January 2021</h3>
+                                <p class="lang-fr">
+                                    Annabelle est la meilleure amie de la sœur de Nathan.<br><br>
+                                    Autant dire qu'ils se connaissent depuis longtemps… mais sans imaginer la
+                                    suite.<br><br>
+                                    Jusqu'à un week-end à Jullouville où, entre la plage, les copains et un premier
+                                    bisou, tout bascule.
+                                </p>
+                                <p class="lang-en">
+                                    Annabelle is the best friend of Nathan's sister.<br><br>
+                                    They had known each other for a long time… but never imagined what would come
+                                    next.<br><br>
+                                    Until a weekend in Jullouville where, between the beach, friends and a first kiss,
+                                    everything changed.
+                                </p>
+                            </div>
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="jullouville">
+                                        <img src="assets/jullouville1.jpg" alt="Jullouville 1" class="carousel-img">
+                                        <img src="assets/jullouville2.jpg" alt="Jullouville 2" class="carousel-img">
+                                        <img src="assets/jullouville3.jpg" alt="Jullouville 3" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Jullouville, Normandie</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 1 -->
+                    <div class="timeline-reveal-btn" data-reveals="2">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline Item 2: Mars & Septembre 2021 - Corse -->
+                    <div class="timeline-item hidden" data-step="2">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <h3 class="timeline-date lang-fr">Mars 2021</h3>
+                                <h3 class="timeline-date lang-en">March 2021</h3>
+                                <p class="lang-fr">
+                                    Ils vivent ensemble leur premier confinement à Jullouville :<br><br>
+                                    une parenthèse inattendue qui les rapproche encore plus.
+                                </p>
+                                <p class="lang-en">
+                                    They lived their first lockdown together in Jullouville:<br><br>
+                                    an unexpected pause that brought them even closer.
+                                </p>
+                                <h3 class="timeline-date lang-fr" style="margin-top: 25px;">Septembre 2021</h3>
+                                <h3 class="timeline-date lang-en" style="margin-top: 25px;">September 2021</h3>
+                                <p class="lang-fr">
+                                    Après un premier été en Corse, Nathan part en Californie pour le travail.<br><br>
+                                    Un nouveau chapitre pour lui — et pour eux — mais toujours main dans la main.
+                                </p>
+                                <p class="lang-en">
+                                    After a first summer in Corsica, Nathan leaves for California for work.<br><br>
+                                    A new chapter for him — and for them — but always hand in hand.
+                                </p>
+                            </div>
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="corse">
+                                        <img src="assets/corse1.jpg" alt="Corse 1" class="carousel-img">
+                                        <img src="assets/corse2.jpg" alt="Corse 2" class="carousel-img">
+                                        <img src="assets/corse3.jpg" alt="Corse 3" class="carousel-img">
+                                        <img src="assets/corse4.jpg" alt="Corse 4" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Corse</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 2 -->
+                    <div class="timeline-reveal-btn hidden" data-reveals="3">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline Item 3: 2021-2022 - Distance & Retrouvailles -->
+                    <div class="timeline-item hidden" data-step="3">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <h3 class="timeline-date lang-fr">2021–2022</h3>
+                                <h3 class="timeline-date lang-en">2021–2022</h3>
+                                <p class="lang-fr">
+                                    Ils apprennent à vivre un amour à distance, entre FaceTime à rallonge, décalage
+                                    horaire<br><br>
+                                    et une complicité qui, elle, reste parfaitement synchronisée.
+                                </p>
+                                <p class="lang-en">
+                                    They learn to live a long-distance love, between endless FaceTime calls, time
+                                    differences<br><br>
+                                    and a connection that remains perfectly synchronized.
+                                </p>
+                                <h3 class="timeline-date lang-fr" style="margin-top: 25px;">2022</h3>
+                                <h3 class="timeline-date lang-en" style="margin-top: 25px;">2022</h3>
+                                <p class="lang-fr">
+                                    Les retrouvailles ont le goût du voyage : Sicile, Portugal,<br><br>
+                                    puis un roadtrip inoubliable à travers la Californie, l'Arizona et le Nevada.
+                                </p>
+                                <p class="lang-en">
+                                    Reunions taste like travel: Sicily, Portugal,<br><br>
+                                    then an unforgettable road trip through California, Arizona and Nevada.
+                                </p>
+                            </div>
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="sicile-portugal">
+                                        <img src="assets/sicile1.jpg" alt="Sicile 1" class="carousel-img">
+                                        <img src="assets/sicile2.jpg" alt="Sicile 2" class="carousel-img">
+                                        <img src="assets/sicile3.jpg" alt="Sicile 3" class="carousel-img">
+                                        <img src="assets/portugal1.jpg" alt="Portugal 1" class="carousel-img">
+                                        <img src="assets/portugal2.jpg" alt="Portugal 2" class="carousel-img">
+                                        <img src="assets/portugal3.jpg" alt="Portugal 3" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Sicile & Portugal</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 3 -->
+                    <div class="timeline-reveal-btn hidden" data-reveals="4">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline Item 4: 2022 - Road Trip USA -->
+                    <div class="timeline-item hidden" data-step="4">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="usa">
+                                        <img src="assets/californie1.jpg" alt="Californie 1" class="carousel-img">
+                                        <img src="assets/californie2.jpg" alt="Californie 2" class="carousel-img">
+                                        <img src="assets/californie3.jpg" alt="Californie 3" class="carousel-img">
+                                        <img src="assets/arizona1.jpg" alt="Arizona 1" class="carousel-img">
+                                        <img src="assets/arizona2.jpg" alt="Arizona 2" class="carousel-img">
+                                        <img src="assets/nevada1.jpg" alt="Nevada 1" class="carousel-img">
+                                        <img src="assets/nevada2.jpg" alt="Nevada 2" class="carousel-img">
+                                        <img src="assets/nevada3.jpg" alt="Nevada 3" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Californie, Arizona & Nevada</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 4 -->
+                    <div class="timeline-reveal-btn hidden" data-reveals="5">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline Item 5: 2022-2023 - Dublin & Adventures -->
+                    <div class="timeline-item hidden" data-step="5">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <h3 class="timeline-date lang-fr">Juin 2022</h3>
+                                <h3 class="timeline-date lang-en">June 2022</h3>
+                                <p class="lang-fr">
+                                    Retour en Europe… mais pas encore en France : direction Dublin pour Nathan.
+                                </p>
+                                <p class="lang-en">
+                                    Back to Europe… but not yet to France: off to Dublin for Nathan.
+                                </p>
+                                <h3 class="timeline-date lang-fr" style="margin-top: 25px;">Août 2023</h3>
+                                <h3 class="timeline-date lang-en" style="margin-top: 25px;">August 2023</h3>
+                                <p class="lang-fr">
+                                    Annabelle termine ses études à toute vitesse et rejoint Nathan en Irlande.<br><br>
+                                    Nouvelle ville, coloc de folie, Guinness, balades sous la pluie et une vie à deux
+                                    qui se construit vraiment.
+                                </p>
+                                <p class="lang-en">
+                                    Annabelle finishes her studies at full speed and joins Nathan in Ireland.<br><br>
+                                    New city, amazing flatshare, Guinness, walks in the rain and a life together that
+                                    really takes shape.
+                                </p>
+                            </div>
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="dublin-adventures">
+                                        <img src="assets/dublin1.jpg" alt="Dublin 1" class="carousel-img">
+                                        <img src="assets/dublin2.jpg" alt="Dublin 2" class="carousel-img">
+                                        <img src="assets/dublin3.jpg" alt="Dublin 3" class="carousel-img">
+                                        <img src="assets/dublin4.jpg" alt="Dublin 4" class="carousel-img">
+                                        <img src="assets/thailand1.jpg" alt="Thaïlande 1" class="carousel-img">
+                                        <img src="assets/thailand2.jpg" alt="Thaïlande 2" class="carousel-img">
+                                        <img src="assets/thailand3.jpg" alt="Thaïlande 3" class="carousel-img">
+                                        <img src="assets/thailand4.jpg" alt="Thaïlande 4" class="carousel-img">
+                                        <img src="assets/thailand6.jpg" alt="Thaïlande 6" class="carousel-img">
+                                        <img src="assets/thailand7.jpg" alt="Thaïlande 7" class="carousel-img">
+                                        <img src="assets/budapest1.jpg" alt="Budapest" class="carousel-img">
+                                        <img src="assets/vienne1.jpg" alt="Vienne 1" class="carousel-img">
+                                        <img src="assets/vienne2.jpg" alt="Vienne 2" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Dublin, Thaïlande, Budapest & Vienne</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 5 -->
+                    <div class="timeline-reveal-btn hidden" data-reveals="6">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline Item 6: 2025 - Demande & Emménagement -->
+                    <div class="timeline-item hidden" data-step="6">
+                        <div class="timeline-marker special"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-text">
+                                <h3 class="timeline-date lang-fr">Mai 2025</h3>
+                                <h3 class="timeline-date lang-en">May 2025</h3>
+                                <p class="lang-fr">
+                                    À Santorin, Nathan organise un week-end surprise.<br><br>
+                                    Sous un coucher de soleil doré, il fait sa demande.<br><br>
+                                    Annabelle ne voit rien venir (vraiment rien).
+                                </p>
+                                <p class="lang-en">
+                                    In Santorini, Nathan organizes a surprise weekend.<br><br>
+                                    Under a golden sunset, he proposes.<br><br>
+                                    Annabelle doesn't see it coming (really not at all).
+                                </p>
+                                <h3 class="timeline-date lang-fr" style="margin-top: 25px;">1er septembre 2025</h3>
+                                <h3 class="timeline-date lang-en" style="margin-top: 25px;">September 1st, 2025</h3>
+                                <p class="lang-fr">
+                                    Ils emménagent dans leur premier appartement,<br>
+                                    prêts pour la suite de leur aventure.
+                                </p>
+                                <p class="lang-en">
+                                    They move into their first apartment,<br>
+                                    ready for the next chapter of their adventure.
+                                </p>
+                            </div>
+                            <div class="timeline-carousel">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" data-carousel="engagement">
+                                        <img src="assets/grece1.jpg" alt="Grèce 1" class="carousel-img">
+                                        <img src="assets/grece2.jpg" alt="Grèce 2" class="carousel-img">
+                                        <img src="assets/grece3.jpg" alt="Grèce 3" class="carousel-img">
+                                        <img src="assets/santorin1.jpg" alt="Santorin 1" class="carousel-img">
+                                        <img src="assets/santorin2.jpg" alt="Santorin 2" class="carousel-img">
+                                        <img src="assets/minorque1.jpg" alt="Minorque" class="carousel-img">
+                                        <img src="assets/ski1.jpg" alt="Ski" class="carousel-img">
+                                        <img src="assets/coloc1.jpg" alt="Coloc" class="carousel-img">
+                                        <img src="assets/mariageSarah.jpg" alt="Mariage Sarah" class="carousel-img">
+                                    </div>
+                                    <button class="carousel-btn prev">‹</button>
+                                    <button class="carousel-btn next">›</button>
+                                    <div class="carousel-dots"></div>
+                                    <div class="carousel-location">Grèce, Santorin & autres aventures</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Reveal Button 6 -->
+                    <div class="timeline-reveal-btn hidden" data-reveals="7">
+                        <button class="reveal-next">+</button>
+                    </div>
+
+                    <!-- Timeline End -->
+                    <div class="timeline-end hidden" data-step="7">
+                        <div class="timeline-marker final"></div>
+                        <div class="timeline-end-text">
+                            <h3 class="lang-fr">Et aujourd'hui —</h3>
+                            <h3 class="lang-en">And today —</h3>
+                            <p class="lang-fr">
+                                Après plus de cinq ans d'amour, de voyages, de retrouvailles et de projets
+                                partagés,<br><br>
+                                ils se retrouvent en Sardaigne pour se dire « oui », entourés de ceux qu'ils aiment.
+                            </p>
+                            <p class="lang-en">
+                                After more than five years of love, travels, reunions and shared dreams,<br><br>
+                                they gather in Sardinia to say "yes", surrounded by those they love.
+                            </p>
+                            <h3 class="lang-fr" style="margin-top: 40px;">🌴 Août 2026 — Polynésie Française</h3>
+                            <h3 class="lang-en" style="margin-top: 40px;">🌴 August 2026 — French Polynesia</h3>
+                            <p class="lang-fr">
+                                La prochaine aventure : une lune de miel au paradis.<br>
+                                Lagons turquoise, bungalows sur pilotis et une nouvelle page à écrire ensemble.
+                            </p>
+                            <p class="lang-en">
+                                The next adventure: a honeymoon in paradise.<br>
+                                Turquoise lagoons, overwater bungalows and a new chapter to write together.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -88,66 +418,103 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Programme du week-end</h2>
                 <h2 class="section-title lang-en">Weekend Schedule</h2>
-                
-                <div class="timeline">
+
+                <div class="schedule-grid">
                     <!-- Friday -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-day lang-fr">Vendredi</h3>
-                            <h3 class="timeline-day lang-en">Friday</h3>
-                            <ul class="timeline-list lang-fr">
-                                <li>Arrivée des premiers invités dans l'après-midi et en soirée</li>
-                                <li>Accès à la piscine et aux infrastructures de l'hôtel</li>
-                                <li>Selon les envies : tournoi de volley sur la plage, jeux (Mölkky, etc.), location de canoës</li>
-                            </ul>
-                            <ul class="timeline-list lang-en">
-                                <li>Guests start arriving in the afternoon and evening</li>
-                                <li>Access to the hotel pool and facilities</li>
-                                <li>Depending on everyone's mood: beach volleyball, games (like Mölkky), and maybe canoe rentals</li>
-                            </ul>
+                    <div class="schedule-card">
+                        <div class="schedule-header">
+                            <div class="schedule-icon">🌅</div>
+                            <div class="schedule-day-info">
+                                <h3 class="schedule-day lang-fr">Vendredi</h3>
+                                <h3 class="schedule-day lang-en">Friday</h3>
+                                <p class="schedule-date lang-fr">9 Juillet</p>
+                                <p class="schedule-date lang-en">July 9th</p>
+                            </div>
+                        </div>
+                        <div class="schedule-content">
+                            <div class="schedule-description lang-fr">
+                                <p class="schedule-intro">Arrivée en douceur</p>
+                                <ul class="schedule-list">
+                                    <li>Arrivée des premiers invités dans l'après-midi et en soirée</li>
+                                    <li>Accès à la piscine et aux infrastructures de l'hôtel</li>
+                                    <li>Activités libres : volley sur la plage, jeux (Mölkky), canoës...</li>
+                                </ul>
+                            </div>
+                            <div class="schedule-description lang-en">
+                                <p class="schedule-intro">Gentle arrival</p>
+                                <ul class="schedule-list">
+                                    <li>Guests start arriving in the afternoon and evening</li>
+                                    <li>Access to the hotel pool and facilities</li>
+                                    <li>Free activities: beach volleyball, games (Mölkky), canoes...</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Saturday -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-day lang-fr">Samedi</h3>
-                            <h3 class="timeline-day lang-en">Saturday</h3>
-                            <ul class="timeline-list lang-fr">
-                                <li>Matinée libre : plage, piscine, balades</li>
-                                <li><strong>15h :</strong> cérémonie laïque</li>
-                                <li><strong>16h–20h :</strong> vin d'honneur</li>
-                                <li><strong>20h–22h30 :</strong> dîner</li>
-                                <li><strong>À partir de 22h30 :</strong> lancement de la soirée</li>
-                            </ul>
-                            <ul class="timeline-list lang-en">
-                                <li>Free morning: beach, pool, walks</li>
-                                <li><strong>3:00 pm:</strong> symbolic ceremony</li>
-                                <li><strong>4:00 pm – 8:00 pm:</strong> cocktail & reception</li>
-                                <li><strong>8:00 pm – 10:30 pm:</strong> dinner</li>
-                                <li><strong>From 10:30 pm:</strong> party time!</li>
-                            </ul>
+                    <div class="schedule-card schedule-card-highlight">
+                        <div class="schedule-header">
+                            <div class="schedule-icon">💍</div>
+                            <div class="schedule-day-info">
+                                <h3 class="schedule-day lang-fr">Samedi</h3>
+                                <h3 class="schedule-day lang-en">Saturday</h3>
+                                <p class="schedule-date lang-fr">10 Juillet</p>
+                                <p class="schedule-date lang-en">July 10th</p>
+                            </div>
+                        </div>
+                        <div class="schedule-content">
+                            <div class="schedule-description lang-fr">
+                                <p class="schedule-intro">Le grand jour !</p>
+                                <ul class="schedule-list">
+                                    <li><span class="time-badge">Matinée</span> Temps libre : plage, piscine, balades
+                                    </li>
+                                    <li><span class="time-badge">15h00</span> Cérémonie laïque</li>
+                                    <li><span class="time-badge">16h–20h</span> Vin d'honneur</li>
+                                    <li><span class="time-badge">20h–22h30</span> Dîner</li>
+                                    <li><span class="time-badge">22h30</span> Soirée dansante 🎉</li>
+                                </ul>
+                            </div>
+                            <div class="schedule-description lang-en">
+                                <p class="schedule-intro">The big day!</p>
+                                <ul class="schedule-list">
+                                    <li><span class="time-badge">Morning</span> Free time: beach, pool, walks</li>
+                                    <li><span class="time-badge">3:00 pm</span> Symbolic ceremony</li>
+                                    <li><span class="time-badge">4–8 pm</span> Cocktail & reception</li>
+                                    <li><span class="time-badge">8–10:30 pm</span> Dinner</li>
+                                    <li><span class="time-badge">10:30 pm</span> Party time 🎉</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Sunday -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-day lang-fr">Dimanche</h3>
-                            <h3 class="timeline-day lang-en">Sunday</h3>
-                            <ul class="timeline-list lang-fr">
-                                <li>Moment tranquille à l'hôtel ou à la plage</li>
-                                <li>Possibilité d'un dernier volley sur la plage</li>
-                                <li>Départs au cours de la journée</li>
-                            </ul>
-                            <ul class="timeline-list lang-en">
-                                <li>Relaxed time at the hotel or on the beach</li>
-                                <li>Maybe one last volleyball game on the sand</li>
-                                <li>Guests leave throughout the day</li>
-                            </ul>
+                    <div class="schedule-card">
+                        <div class="schedule-header">
+                            <div class="schedule-icon">🌊</div>
+                            <div class="schedule-day-info">
+                                <h3 class="schedule-day lang-fr">Dimanche</h3>
+                                <h3 class="schedule-day lang-en">Sunday</h3>
+                                <p class="schedule-date lang-fr">11 Juillet</p>
+                                <p class="schedule-date lang-en">July 11th</p>
+                            </div>
+                        </div>
+                        <div class="schedule-content">
+                            <div class="schedule-description lang-fr">
+                                <p class="schedule-intro">Au revoir la Sardaigne</p>
+                                <ul class="schedule-list">
+                                    <li>Moment tranquille à l'hôtel ou à la plage</li>
+                                    <li>Possibilité d'un dernier volley sur le sable</li>
+                                    <li>Départs échelonnés au cours de la journée</li>
+                                </ul>
+                            </div>
+                            <div class="schedule-description lang-en">
+                                <p class="schedule-intro">Goodbye Sardinia</p>
+                                <ul class="schedule-list">
+                                    <li>Relaxed time at the hotel or on the beach</li>
+                                    <li>Maybe one last volleyball game on the sand</li>
+                                    <li>Guests leave throughout the day</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -159,33 +526,41 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Lieu & accès</h2>
                 <h2 class="section-title lang-en">Venue & Travel</h2>
-                
+
                 <div class="venue-content">
-                    <!-- Venue Description -->
                     <div class="venue-block">
                         <h3 class="venue-subtitle lang-fr">Description du lieu</h3>
                         <h3 class="venue-subtitle lang-en">Venue Description</h3>
                         <p class="lang-fr">
-                            L'hôtel Il Monastero est un ancien monastère au charme unique, entouré de jardins, d'orangers et d'une grande piscine tropicale. Les chambres sont décorées dans un style chaleureux et authentique, parfait pour un week-end hors du temps. C'est un coin de paradis en Sardaigne, à quelques minutes des plages et de la mer turquoise.
+                            L'hôtel Il Monastero est un ancien monastère au charme unique, entouré de jardins,
+                            d'orangers et d'une grande piscine tropicale. Les chambres sont décorées dans un style
+                            chaleureux et authentique, parfait pour un week-end hors du temps. C'est un coin de paradis
+                            en Sardaigne, à quelques minutes des plages et de la mer turquoise.
                         </p>
                         <p class="lang-en">
-                            Hotel Il Monastero is a former monastery with a unique charm, surrounded by gardens, orange trees and a large tropical-style pool. The rooms are warm and authentic, ideal for a weekend out of time. It is a little corner of paradise in Sardinia, just a few minutes away from the sea and turquoise beaches.
+                            Hotel Il Monastero is a former monastery with a unique charm, surrounded by gardens, orange
+                            trees and a large tropical-style pool. The rooms are warm and authentic, ideal for a weekend
+                            out of time. It is a little corner of paradise in Sardinia, just a few minutes away from the
+                            sea and turquoise beaches.
                         </p>
                     </div>
 
-                    <!-- How to Get There -->
                     <div class="venue-block">
                         <h3 class="venue-subtitle lang-fr">Accès</h3>
                         <h3 class="venue-subtitle lang-en">How to Get There</h3>
                         <ul class="access-list lang-fr">
                             <li><strong>Depuis l'aéroport de Cagliari :</strong> environ 40 minutes en voiture</li>
-                            <li><strong>Depuis l'aéroport d'Olbia :</strong> possibilité de venir en voiture (prévoir un trajet plus long)</li>
-                            <li><strong>Depuis Porto Torres :</strong> arrivée en ferry, puis route en voiture jusqu'à l'hôtel</li>
-                            <li><strong>Navettes :</strong> des navettes depuis l'aéroport de Cagliari pourront être organisées si besoin</li>
+                            <li><strong>Depuis l'aéroport d'Olbia :</strong> possibilité de venir en voiture (prévoir un
+                                trajet plus long)</li>
+                            <li><strong>Depuis Porto Torres :</strong> arrivée en ferry, puis route en voiture jusqu'à
+                                l'hôtel</li>
+                            <li><strong>Navettes :</strong> des navettes depuis l'aéroport de Cagliari pourront être
+                                organisées si besoin</li>
                         </ul>
                         <ul class="access-list lang-en">
                             <li><strong>From Cagliari airport:</strong> about 40 minutes by car</li>
-                            <li><strong>From Olbia airport:</strong> you can also drive down (allow for a longer journey)</li>
+                            <li><strong>From Olbia airport:</strong> you can also drive down (allow for a longer
+                                journey)</li>
                             <li><strong>From Porto Torres:</strong> arrive by ferry, then drive to the hotel</li>
                             <li><strong>Shuttles:</strong> shuttles from Cagliari airport may be arranged if needed</li>
                         </ul>
@@ -199,28 +574,29 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Dress code</h2>
                 <h2 class="section-title lang-en">Dress Code</h2>
-                
+
                 <div class="dresscode-content">
                     <p class="lang-fr">
-                        Nous vous proposons un dress code chic et estival, dans les tons terracotta et couleurs de coucher de soleil. Laissez-vous inspirer par les couleurs chaudes de la Sardaigne : orangés, rouilles, beiges, dorés, nude…
+                        Nous vous proposons un dress code chic et estival, dans les tons terracotta et couleurs de
+                        coucher de soleil. Laissez-vous inspirer par les couleurs chaudes de la Sardaigne : orangés,
+                        rouilles, beiges, dorés, nude…
                     </p>
                     <p class="lang-en">
-                        We suggest a chic, summer dress code in terracotta and sunset tones. Think of the warm colors of Sardinia: orange, rust, beige, gold, nude…
+                        We suggest a chic, summer dress code in terracotta and sunset tones. Think of the warm colors of
+                        Sardinia: orange, rust, beige, gold, nude…
                     </p>
-                    
+
                     <div class="dresscode-gallery">
                         <div class="dresscode-placeholder">
-                            <img src="assets/dresscode-1.jpg" alt="Dress code example 1">
+                            <img src="assets/Theme1.jpg" alt="Dress code 1" loading="lazy">
                         </div>
                         <div class="dresscode-placeholder">
-                            <img src="assets/dresscode-2.jpg" alt="Dress code example 2">
+                            <img src="assets/Theme2.jpg" alt="Dress code 2" loading="lazy">
                         </div>
                         <div class="dresscode-placeholder">
-                            <img src="assets/dresscode-3.jpg" alt="Dress code example 3">
+                            <img src="assets/Theme3.jpg" alt="Dress code 3" loading="lazy">
                         </div>
                     </div>
-                    <p class="dresscode-note lang-fr"><em>Des exemples en photos seront ajoutés prochainement.</em></p>
-                    <p class="dresscode-note lang-en"><em>Photo examples will be added soon.</em></p>
                 </div>
             </div>
         </section>
@@ -230,45 +606,48 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Infos pratiques</h2>
                 <h2 class="section-title lang-en">Practical Information</h2>
-                
+
                 <div class="practical-grid">
-                    <!-- Accommodation -->
                     <div class="practical-card">
                         <h3 class="practical-title lang-fr">Hébergement</h3>
                         <h3 class="practical-title lang-en">Accommodation</h3>
                         <p class="lang-fr">
-                            L'hôtel a été privatisé pour le mariage et les chambres ont été attribuées en fonction des places disponibles. Il existe également des logements et Airbnbs dans les environs pour ceux qui préfèrent séjourner à l'extérieur.
+                            L'hôtel a été privatisé pour le mariage et les chambres ont été attribuées en fonction des
+                            places disponibles. Il existe également des logements et Airbnbs dans les environs pour ceux
+                            qui préfèrent séjourner à l'extérieur.
                         </p>
                         <p class="lang-en">
-                            The hotel has been privatized for the wedding and rooms have been allocated according to availability. There are also houses and Airbnbs nearby for those who prefer to stay off-site.
+                            The hotel has been privatized for the wedding and rooms have been allocated according to
+                            availability. There are also houses and Airbnbs nearby for those who prefer to stay
+                            off-site.
                         </p>
                     </div>
 
-                    <!-- Beaches -->
                     <div class="practical-card">
                         <h3 class="practical-title lang-fr">Plages</h3>
                         <h3 class="practical-title lang-en">Beaches</h3>
                         <p class="lang-fr">
-                            La plage se trouve à environ 10 minutes du lieu. Plusieurs plages aux eaux turquoise sont accessibles en 10–15 minutes de voiture.
+                            La plage se trouve à environ 10 minutes du lieu. Plusieurs plages aux eaux turquoise sont
+                            accessibles en 10–15 minutes de voiture.
                         </p>
                         <p class="lang-en">
-                            The nearest beach is about 10 minutes away. Several turquoise beaches can be reached within a 10–15 minute drive.
+                            The nearest beach is about 10 minutes away. Several turquoise beaches can be reached within
+                            a 10–15 minute drive.
                         </p>
                     </div>
 
-                    <!-- Weather -->
                     <div class="practical-card">
                         <h3 class="practical-title lang-fr">Météo & maillots de bain</h3>
                         <h3 class="practical-title lang-en">Weather & Swimwear</h3>
                         <p class="lang-fr">
-                            Il fera beau et chaud : pensez à prendre vos maillots de bain, chapeaux, lunettes de soleil et crème solaire.
+                            Il fera beau et chaud : pensez à prendre vos maillots de bain, chapeaux, lunettes de soleil
+                            et crème solaire.
                         </p>
                         <p class="lang-en">
                             It will be warm and sunny: don't forget your swimsuits, hats, sunglasses and sunscreen.
                         </p>
                     </div>
 
-                    <!-- Transport -->
                     <div class="practical-card">
                         <h3 class="practical-title lang-fr">Transports</h3>
                         <h3 class="practical-title lang-en">Transport</h3>
@@ -288,7 +667,7 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Galerie</h2>
                 <h2 class="section-title lang-en">Gallery</h2>
-                
+
                 <p class="gallery-intro lang-fr">
                     Nous ajouterons ici une vidéo et quelques photos pour vous faire patienter avant le grand jour.
                 </p>
@@ -296,27 +675,39 @@
                     We will add a video and some photos here to help you wait for the big day.
                 </p>
 
-                <!-- Video placeholder -->
                 <div class="video-container">
-                    <div class="video-placeholder">
-                        <p class="lang-fr">📹 Vidéo à venir</p>
-                        <p class="lang-en">📹 Video coming soon</p>
-                    </div>
+                    <iframe src="https://www.youtube.com/embed/TapgwtIrb1A" title="Annabelle & Nathan" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen class="youtube-video"></iframe>
                 </div>
 
-                <!-- Photo grid -->
                 <div class="photo-grid">
                     <div class="photo-item">
-                        <img src="assets/photo-1.jpg" alt="Photo 1">
+                        <img src="assets/gallerie1.JPG" alt="Annabelle & Nathan 1" loading="lazy">
                     </div>
                     <div class="photo-item">
-                        <img src="assets/photo-2.jpg" alt="Photo 2">
+                        <img src="assets/gallerie2.JPG" alt="Annabelle & Nathan 2" loading="lazy">
                     </div>
                     <div class="photo-item">
-                        <img src="assets/photo-3.jpg" alt="Photo 3">
+                        <img src="assets/gallerie4.JPG" alt="Annabelle & Nathan 4" loading="lazy">
                     </div>
                     <div class="photo-item">
-                        <img src="assets/photo-4.jpg" alt="Photo 4">
+                        <img src="assets/gallerie5.JPG" alt="Annabelle & Nathan 5" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/gallerie6.jpg" alt="Annabelle & Nathan 6" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/gallerie7.JPG" alt="Annabelle & Nathan 7" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/gallerie8.JPG" alt="Annabelle & Nathan 8" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/gallerie9.JPG" alt="Annabelle & Nathan 9" loading="lazy">
+                    </div>
+                    <div class="photo-item">
+                        <img src="assets/gallerie10.JPG" alt="Annabelle & Nathan 10" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -327,30 +718,24 @@
             <div class="container">
                 <h2 class="section-title lang-fr">Cagnotte</h2>
                 <h2 class="section-title lang-en">Gift Fund</h2>
-                
+
                 <div class="gift-content">
                     <p class="gift-intro lang-fr">
-                        Votre présence est le plus beau des cadeaux. Si vous souhaitez néanmoins nous aider à financer une partie du mariage ou à contribuer à notre voyage de lune de miel en Polynésie française, vous pouvez participer à notre cagnotte :
+                        Votre présence est le plus beau des cadeaux. Si vous souhaitez néanmoins nous aider à financer
+                        une partie du mariage ou à contribuer à notre voyage de lune de miel en Polynésie française,
+                        vous pouvez participer à notre cagnotte :
                     </p>
                     <p class="gift-intro lang-en">
-                        Your presence is the greatest gift. If you would still like to help us cover part of the wedding or contribute to our honeymoon in French Polynesia, you can use our gift fund:
+                        Your presence is the greatest gift. If you would still like to help us cover part of the wedding
+                        or contribute to our honeymoon in French Polynesia, you can use our gift fund:
                     </p>
 
                     <div class="gift-options">
                         <div class="gift-link">
-                            <p class="lang-fr">• Via ce lien :</p>
-                            <p class="lang-en">• Via this link:</p>
-                            <a href="https://revolut.me/nathanbo0k" target="_blank" rel="noopener noreferrer" class="revolut-link">
+                            <a href="https://revolut.me/nathanbo0k" target="_blank" rel="noopener noreferrer"
+                                class="revolut-link">
                                 revolut.me/nathanbo0k
                             </a>
-                        </div>
-
-                        <div class="gift-qr">
-                            <p class="lang-fr">• Ou en scannant le QR code ci-dessous :</p>
-                            <p class="lang-en">• Or by scanning the QR code below:</p>
-                            <div class="qr-container">
-                                <img src="assets/qr-revolut.png" alt="QR Code Revolut" class="qr-code">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -369,5 +754,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
