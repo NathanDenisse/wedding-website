@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧪 Test Carousels</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 40px;
+            background: #f5f1e8;
+        }
+        .test-section {
+            background: white;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .test-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: #d4856a;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .carousel-test {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .debug-info {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f0f0f0;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: #d4856a;">
+        🧪 Test des Carousels
+    </h1>
+    
+    <div class="test-section">
+        <h2 class="test-title">1. Carousel Jullouville (3 images)</h2>
+        <div class="carousel-test">
+            <div class="timeline-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-carousel="test-jullouville">
+                        <img src="assets/jullouville1.jpg" alt="Jullouville 1" class="carousel-img">
+                        <img src="assets/jullouville2.jpg" alt="Jullouville 2" class="carousel-img">
+                        <img src="assets/jullouville3.jpg" alt="Jullouville 3" class="carousel-img">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="carousel-location">Jullouville, Normandie</div>
+                </div>
+            </div>
+        </div>
+        <div class="debug-info" id="debug-jullouville">
+            <strong>Debug Info:</strong><br>
+            Loading...
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">2. Carousel Corse (4 images)</h2>
+        <div class="carousel-test">
+            <div class="timeline-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-carousel="test-corse">
+                        <img src="assets/corse1.jpg" alt="Corse 1" class="carousel-img">
+                        <img src="assets/corse2.jpg" alt="Corse 2" class="carousel-img">
+                        <img src="assets/corse3.jpg" alt="Corse 3" class="carousel-img">
+                        <img src="assets/corse4.jpg" alt="Corse 4" class="carousel-img">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="carousel-location">Corse</div>
+                </div>
+            </div>
+        </div>
+        <div class="debug-info" id="debug-corse">
+            <strong>Debug Info:</strong><br>
+            Loading...
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2 class="test-title">3. Carousel Thailand (3 images converties HEIF→JPG)</h2>
+        <div class="carousel-test">
+            <div class="timeline-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track" data-carousel="test-thailand">
+                        <img src="assets/thailand1.jpg" alt="Thailand 1" class="carousel-img">
+                        <img src="assets/thailand2.jpg" alt="Thailand 2" class="carousel-img">
+                        <img src="assets/thailand3.jpg" alt="Thailand 3" class="carousel-img">
+                    </div>
+                    <button class="carousel-btn prev">‹</button>
+                    <button class="carousel-btn next">›</button>
+                    <div class="carousel-dots">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <div class="carousel-location">Thaïlande</div>
+                </div>
+            </div>
+        </div>
+        <div class="debug-info" id="debug-thailand">
+            <strong>Debug Info:</strong><br>
+            Loading...
+        </div>
+    </div>
+    
+    <script>
+        // Copie du système de carousel simplifié avec debug
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🎠 Test Carousels - Initialisation...');
+            
+            function initCarousel(carouselId, debugEl) {
+                console.log(`📸 Init carousel: ${carouselId}`);
+                
+                const container = document.querySelector(`.carousel-container:has([data-carousel="${carouselId}"])`);
+                if (!container) {
+                    if (debugEl) debugEl.innerHTML += `<br>❌ Container non trouvé`;
+                    return;
+                }
+                
+                const track = container.querySelector('.carousel-track');
+                const images = track.querySelectorAll('.carousel-img');
+                const prevBtn = container.querySelector('.carousel-btn.prev');
+                const nextBtn = container.querySelector('.carousel-btn.next');
+                const dots = container.querySelectorAll('.dot');
+                
+                if (debugEl) {
+                    debugEl.innerHTML = `<strong>Debug Info:</strong><br>`;
+                    debugEl.innerHTML += `✅ Container trouvé<br>`;
+                    debugEl.innerHTML += `📸 Images trouvées: ${images.length}<br>`;
+                    images.forEach((img, i) => {
+                        debugEl.innerHTML += `  - Image ${i+1}: ${img.src.split('/').pop()}<br>`;
+                    });
+                }
+                
+                let currentIndex = 0;
+                
+                // Forcer l'affichage
+                images.forEach((img, index) => {
+                    img.style.display = 'block';
+                    img.style.position = 'absolute';
+                    img.style.top = '0';
+                    img.style.left = '0';
+                    img.style.width = '100%';
+                    img.style.height = '100%';
+                    img.style.objectFit = 'cover';
+                    img.loading = 'eager';
+                    
+                    if (index === 0) {
+                        img.style.opacity = '1';
+                        img.style.zIndex = '2';
+                        img.classList.add('active');
+                        if (debugEl) debugEl.innerHTML += `<br>👁️ Image 1 affichée`;
+                    } else {
+                        img.style.opacity = '0';
+                        img.style.zIndex = '1';
+                    }
+                });
+                
+                function showImage(index) {
+                    images.forEach(img => {
+                        img.style.opacity = '0';
+                        img.style.zIndex = '1';
+                        img.classList.remove('active');
+                    });
+                    
+                    images[index].style.opacity = '1';
+                    images[index].style.zIndex = '2';
+                    images[index].classList.add('active');
+                    
+                    dots.forEach((dot, i) => {
+                        if (i === index) dot.classList.add('active');
+                        else dot.classList.remove('active');
+                    });
+                    
+                    currentIndex = index;
+                    if (debugEl) {
+                        debugEl.innerHTML = debugEl.innerHTML.split('<br>🔄')[0];
+                        debugEl.innerHTML += `<br>🔄 Image actuelle: ${index + 1}/${images.length}`;
+                    }
+                }
+                
+                if (nextBtn) {
+                    nextBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showImage((currentIndex + 1) % images.length);
+                    });
+                }
+                
+                if (prevBtn) {
+                    prevBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        showImage((currentIndex - 1 + images.length) % images.length);
+                    });
+                }
+                
+                dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => showImage(index));
+                });
+                
+                if (debugEl) debugEl.innerHTML += `<br>✅ Carousel initialisé avec succès`;
+            }
+            
+            // Initialiser les carousels de test
+            initCarousel('test-jullouville', document.getElementById('debug-jullouville'));
+            initCarousel('test-corse', document.getElementById('debug-corse'));
+            initCarousel('test-thailand', document.getElementById('debug-thailand'));
+            
+            console.log('✅ Tous les carousels de test initialisés');
+        });
+    </script>
+</body>
+</html>
+
+
+
