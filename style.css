@@ -379,6 +379,37 @@ body.lang-en .lang-fr {
 }
 
 /* ============================================
+   STORY INTRO
+   ============================================ */
+
+.story-intro {
+    max-width: 800px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    background: linear-gradient(135deg, rgba(245, 241, 232, 0.6), rgba(255, 255, 255, 0.8));
+    border-radius: var(--radius-lg);
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-dark);
+    box-shadow: var(--shadow-sm);
+}
+
+.story-intro strong {
+    color: var(--terracotta-dark);
+    font-weight: 600;
+}
+
+.story-intro em {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: var(--terracotta);
+    font-size: 1.1rem;
+}
+
+/* ============================================
    TIMELINE
    ============================================ */
 
@@ -1055,7 +1086,7 @@ body.lang-en .lang-fr {
 }
 
 .access-list li::before {
-    content: '✈';
+    content: '•';
     position: absolute;
     left: 0;
     color: var(--terracotta);
