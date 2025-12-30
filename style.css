@@ -204,7 +204,7 @@ body.lang-en .lang-fr {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(245, 241, 232, 0.85), rgba(250, 247, 240, 0.8), rgba(255, 240, 230, 0.85)), url('assets/Hotel%20Il%20monastero.jpg') center/cover fixed;
-    padding: 120px 20px 80px;
+    padding: 120px 20px 120px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -255,7 +255,41 @@ body.lang-en .lang-fr {
     font-weight: 300;
     line-height: 1.8;
     max-width: 650px;
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
+}
+
+.location-link {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-weight: 400;
+    color: var(--terracotta);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid var(--terracotta-light);
+    border-radius: var(--radius-full);
+    transition: all var(--transition);
+    opacity: 0.9;
+}
+
+.location-link:hover {
+    background: var(--terracotta);
+    color: var(--white);
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.venue-link {
+    color: var(--terracotta);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--terracotta-light);
+    transition: all var(--transition);
+}
+
+.venue-link:hover {
+    color: var(--terracotta-dark);
+    border-bottom-color: var(--terracotta);
 }
 
 .scroll-btn {
