@@ -1470,6 +1470,11 @@ body.lang-en .lang-fr {
         height: 250px;
     }
 
+    .location-link {
+        font-size: 0.85rem;
+        padding: 8px 16px;
+    }
+
     .schedule-grid {
         grid-template-columns: 1fr;
         gap: 25px;
@@ -1559,18 +1564,35 @@ body.lang-en .lang-fr {
     }
 
     .hero {
-        padding: 90px 10px 50px;
+        padding: 80px 10px 40px;
+        min-height: auto;
     }
 
     .hero-couple-photo {
-        width: 200px;
-        height: 200px;
-        border-width: 6px;
+        width: 180px;
+        height: 180px;
+        border-width: 5px;
+        margin-bottom: 25px;
+    }
+
+    .hero-title {
+        margin-bottom: 15px;
+    }
+
+    .hero-subtitle {
+        margin-bottom: 15px;
+        font-size: 0.95rem;
     }
 
     .scroll-btn {
-        font-size: 12px;
-        padding: 12px 24px;
+        font-size: 11px;
+        padding: 10px 20px;
+    }
+
+    .location-link {
+        font-size: 0.75rem;
+        padding: 6px 12px;
+        margin-bottom: 12px;
     }
 
     .section {
