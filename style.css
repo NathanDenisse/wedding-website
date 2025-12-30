@@ -204,7 +204,7 @@ body.lang-en .lang-fr {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, rgba(245, 241, 232, 0.85), rgba(250, 247, 240, 0.8), rgba(255, 240, 230, 0.85)), url('assets/Hotel%20Il%20monastero.jpg') center/cover fixed;
-    padding: 120px 20px 120px;
+    padding: 80px 20px 60px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -218,16 +218,16 @@ body.lang-en .lang-fr {
 }
 
 .hero-photo {
-    margin-bottom: 40px;
+    margin-bottom: 25px;
     animation: fadeIn 1.5s ease;
 }
 
 .hero-couple-photo {
-    width: 320px;
-    height: 320px;
+    width: 260px;
+    height: 260px;
     border-radius: 50%;
     object-fit: cover;
-    border: 8px solid var(--white);
+    border: 6px solid var(--white);
     box-shadow: var(--shadow-lg), var(--shadow-terracotta);
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -238,13 +238,13 @@ body.lang-en .lang-fr {
 
 .hero-title {
     font-family: var(--font-serif);
-    font-size: clamp(3rem, 7vw, 6rem);
+    font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 400;
     background: linear-gradient(135deg, var(--terracotta-dark), var(--sunset));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     letter-spacing: 3px;
 }
 
@@ -1461,13 +1461,13 @@ body.lang-en .lang-fr {
     }
 
     .hero {
-        padding: 100px 15px 60px;
+        padding: 90px 15px 50px;
         background-attachment: scroll;
     }
 
     .hero-couple-photo {
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
     }
 
     .location-link {
@@ -1565,23 +1565,12 @@ body.lang-en .lang-fr {
 
     .hero {
         padding: 80px 10px 40px;
-        min-height: auto;
     }
 
     .hero-couple-photo {
         width: 180px;
         height: 180px;
         border-width: 5px;
-        margin-bottom: 25px;
-    }
-
-    .hero-title {
-        margin-bottom: 15px;
-    }
-
-    .hero-subtitle {
-        margin-bottom: 15px;
-        font-size: 0.95rem;
     }
 
     .scroll-btn {
@@ -1590,9 +1579,8 @@ body.lang-en .lang-fr {
     }
 
     .location-link {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
         padding: 6px 12px;
-        margin-bottom: 12px;
     }
 
     .section {
