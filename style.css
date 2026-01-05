@@ -1143,6 +1143,15 @@ body.lang-en .lang-fr {
     margin: 40px 0;
 }
 
+/* Desktop: grille visible, carousel caché */
+.dresscode-desktop {
+    display: grid;
+}
+
+.dresscode-mobile {
+    display: none;
+}
+
 .dresscode-placeholder {
     aspect-ratio: 3/4;
     background: linear-gradient(135deg, var(--terracotta-light), var(--accent));
@@ -1536,6 +1545,15 @@ body.lang-en .lang-fr {
         grid-template-columns: 1fr;
         max-width: 350px;
         margin: 40px auto;
+    }
+
+    /* Mobile: grille cachée, carousel visible */
+    .dresscode-desktop {
+        display: none;
+    }
+
+    .dresscode-mobile {
+        display: block;
     }
 
     .photo-grid {
