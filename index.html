@@ -805,11 +805,50 @@
                     </p>
 
                     <div class="gift-options">
+                        <!-- Revolut (inchangé) -->
                         <div class="gift-link">
                             <a href="https://revolut.me/nathanbo0k" target="_blank" rel="noopener noreferrer"
                                 class="revolut-link">
                                 revolut.me/nathanbo0k
                             </a>
+                        </div>
+
+                        <!-- Wero -->
+                        <div class="gift-method">
+                            <div class="gift-method-icon">📱</div>
+                            <div class="gift-method-body">
+                                <h3 class="gift-method-title">Wero</h3>
+                                <p class="gift-method-note lang-fr">Envoyez votre participation au numéro ci-dessous.</p>
+                                <p class="gift-method-note lang-en">Send your contribution to the number below.</p>
+                                <div class="gift-detail">
+                                    <span class="gift-detail-value">06 41 33 13 72</span>
+                                    <button type="button" class="copy-btn" data-copy="0641331372"
+                                        aria-label="Copier le numéro">📋</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Virement bancaire -->
+                        <div class="gift-method">
+                            <div class="gift-method-icon">🏦</div>
+                            <div class="gift-method-body">
+                                <h3 class="gift-method-title lang-fr">Virement bancaire</h3>
+                                <h3 class="gift-method-title lang-en">Bank transfer</h3>
+                                <p class="gift-method-note lang-fr">Au nom d'Annabelle Cathala.</p>
+                                <p class="gift-method-note lang-en">To the account of Annabelle Cathala.</p>
+                                <div class="gift-detail">
+                                    <span class="gift-detail-label">IBAN</span>
+                                    <span class="gift-detail-value">FR76 3000 4013 0100 0003 7001 656</span>
+                                    <button type="button" class="copy-btn" data-copy="FR7630004013010000037001656"
+                                        aria-label="Copier l'IBAN">📋</button>
+                                </div>
+                                <div class="gift-detail">
+                                    <span class="gift-detail-label">BIC</span>
+                                    <span class="gift-detail-value">BNPAFRPPXXX</span>
+                                    <button type="button" class="copy-btn" data-copy="BNPAFRPPXXX"
+                                        aria-label="Copier le BIC">📋</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -827,6 +866,21 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Boutons "copier" de la section cagnotte
+        document.querySelectorAll('.copy-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                navigator.clipboard.writeText(btn.dataset.copy).then(() => {
+                    btn.textContent = '✓';
+                    btn.classList.add('copied');
+                    setTimeout(() => {
+                        btn.textContent = '📋';
+                        btn.classList.remove('copied');
+                    }, 1500);
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
